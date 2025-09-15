@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+p,
+ol,
+li {
+  margin: 0;
+}
+
+/* 더보기 토글 컴포넌트 */
+
+details {
+  max-inline-size: 72rem;
+}
+
+.question-contents-101 {
+  block-size: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 36px;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-block-end: 1px solid #898989;
+}
+
+.toggle-icon-103 {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  inline-size: 24px;
+  block-size: 24px;
+  background-image: url(../assets/plus.svg);
+  background-repeat: no-repeat;
+}
+
+details[open] .toggle-icon-103 {
+  background-image: url(../assets/minus.svg);
+}
+
+.details-contents-105 {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 24px;
+  border-block-end: 1px solid #898989;
+}
+
+.list-106 {
+  padding: 25px;
+}
+
+.helplink-107 {
+  border-block-end: 2px solid gainsboro;
+  margin-block-end: 24px;
+}
