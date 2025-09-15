@@ -1,0 +1,51 @@
+/* 삭제예정 */
+body { 
+    background: silver;
+}
+
+
+:root {
+    --white: #fff;
+    --blue: #0075FF;
+    --button-white: #fff;
+    --button-blue: #0075FF;
+    --button-round: 8px 12px;
+    --button-squre: 16px 24px;
+    --button-radius: 22px;
+}
+
+.button {
+    border: none;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.button-001 {
+    padding: var(--button-round);
+    border-radius: var(--button-radius);
+    background: var(--button-white);
+    color: var(--blue);
+}
+
+.button-002 {
+    padding: var(--button-squre);
+    background: var(--button-blue);
+    color: var(--white);
+
+    span {
+        display: inline-block;
+        position: relative;
+        padding-left: 28px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute; left: 0;
+            background-image: url(/src/assets/download.svg);
+            inline-size: 24px;
+            block-size: 24px;
+        }
+    }
+}
