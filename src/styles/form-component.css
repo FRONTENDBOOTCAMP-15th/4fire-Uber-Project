@@ -10,7 +10,7 @@
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem; /* 간격 늘림 */
 }
 
 /* 공통 input 스타일 */
@@ -36,7 +36,7 @@
 
 /* 성공 */
 .success input {
-  border-color: green;
+  border-color: #ccc;
   background-color: #e6f9e6;
 }
 
@@ -49,7 +49,8 @@
 .error-icon {
   position: absolute;
   right: 12px;
-  top: 12px;
+  top: 50%;                /* 중앙 정렬 */
+  transform: translateY(-50%);
   color: red;
   font-size: 1.2rem;
 }
@@ -67,17 +68,18 @@
 
 /* 체크박스 */
 .toggle-eye-201 {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    cursor: pointer;
+  position: absolute;
+  right: 12px;             /* input 안 우측 */
+  top: 50%;                /* 세로 중앙 */
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 .visually-hidden {
-    position: absolute;
-    width: 1px; height: 1px;
-    margin: -1px; border: 0; padding: 0;
-    clip: rect(0 0 0 0); clip-path: inset(50%);
-    overflow: hidden;
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; border: 0; padding: 0;
+  clip: rect(0 0 0 0); clip-path: inset(50%);
+  overflow: hidden;
 }
 /* 기본 OFF, ON은 숨김 */
 .off-201 { display: inline-block; }
