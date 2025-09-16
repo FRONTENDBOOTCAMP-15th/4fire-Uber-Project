@@ -1,0 +1,20 @@
+body {
+    margin: 20px;
+}
+
+/* 자세히보기 hover 밑줄 */
+.etc-202 a {
+    position: relative;
+    background: #ffc; /* 영역 알아보기 */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 4px 8px;
+    text-decoration-line : none; /* a text 아래 밑줄 제거*/
+}
+
+.etc-202 a:hover,
+.etc-202 a:active {
+    border-bottom: 2px solid #000;
+}

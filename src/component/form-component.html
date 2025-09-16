@@ -6,7 +6,74 @@
     <link rel="stylesheet" href="../styles/form-component.css" />
     <title>폼 컴포넌트</title>
   </head>
+  <!-- 입력 컴포넌트 class number 201 -->
   <body>
-    <!-- 입력 컴포넌트 -->
+    <form action="/" method="post" class="signup-201">
+
+      <!-- 이름 + 성 (2열) -->
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="input-first-201" class="sr-only">이름</label>
+          <input type="text" id="input-first-201" name="first-201" required placeholder="이름" />
+        </div>
+        <div class="form-field">
+          <label for="input-last-201" class="sr-only">성</label>
+          <input type="text" id="input-last-201" name="last-201" required placeholder="성" />
+        </div>
+      </div>
+
+      <!-- 이메일 -->
+      <div class="form-field success">
+        <label for="input-email-201" class="sr-only">이메일</label>
+        <input type="email" id="input-email-201" name="email-201" required placeholder="이메일" />
+      </div>
+
+      <!-- 비밀번호 + 눈 아이콘 -->
+      <div class="form-field password">
+        <label for="input-password-201" class="sr-only">비밀번호</label>
+        <input type="password" id="input-password-201" name="password-201" class="password-input" required placeholder="비밀번호" />
+
+        <!-- 눈 아이콘 토글 -->
+        <label class="toggle-eye-201">
+          <input type="checkbox" class="visually-hidden" id="toggle-eye-201" />
+
+          <!-- 눈 감은 상태 -->
+          <svg class="off-201" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C8.36403 6 5.23183 9.21014 3.81174 10.9343C3.42357 11.4056 3.22949 11.6412 3.22949 12C3.22949 12.3588 3.42357 12.5944 3.81173 13.0657C5.23183 14.7899 8.36403 18 11.9998 18C15.6355 18 18.7677 14.7899 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12ZM11.9998 15C13.6566 15 14.9998 13.6569 14.9998 12C14.9998 10.3431 13.6566 9 11.9998 9C10.3429 9 8.99977 10.3431 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15Z"
+              fill="#0075FF" />
+          </svg>
+
+          <!-- 눈 뜬 상태 -->
+          <svg class="on-201" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z"
+              fill="#0075FF" />
+            <path d="M5 2L21 18" stroke="#0075FF" stroke-width="2" />
+          </svg>
+        </label>
+      </div>
+
+      <!-- 비밀번호 (에러 상태 예시) -->
+      <div class="form-field error">
+        <input type="password" placeholder="비밀번호" class="input" />
+        <span class="error-icon">✖</span>
+        <p class="error-text">비밀번호를 다시 입력해주세요.</p>
+      </div>
+
+      <!-- 전화번호 -->
+      <div class="form-field">
+        <label for="input-phone-201" class="sr-only">전화번호</label>
+        <input type="tel" id="input-phone-201" name="phone-201" placeholder="전화번호" />
+      </div>
+
+      <!-- 국가 -->
+      <div class="form-field">
+        <label for="input-country-201" class="sr-only">국가</label>
+        <input type="text" id="input-country-201" name="country-201"
+          value="Seoul, Korea, Republic of (South Korea)" readonly />
+      </div>
+    </form>
   </body>
+
 </html>
