@@ -1,0 +1,95 @@
+.signup-201 {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+
+/* 이름 + 성 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* 공통 input 스타일 */
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-field input:focus {
+  border-color: #333;
+}
+
+/* 성공 */
+.success input {
+  border-color: green;
+  background-color: #e6f9e6;
+}
+
+/* 에러 */
+.error input {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+.error-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.error-text {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: red;
+}
+
+/* 비밀번호 + 눈 아이콘 */
+.password {
+  position: relative;
+}
+
+/* 체크박스 */
+.toggle-eye-201 {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; border: 0; padding: 0;
+    clip: rect(0 0 0 0); clip-path: inset(50%);
+    overflow: hidden;
+}
+/* 기본 OFF, ON은 숨김 */
+.off-201 { display: inline-block; }
+.on-201 { display: none; }
+
+/* 체크되면 반대 */
+.toggle-eye-201 input:checked ~ .on-201 { display: inline-block; }
+.toggle-eye-201 input:checked ~ .off-201 { display: none; }
+
+/* disabled */
+input:disabled {
+  background-color: #f2f2f2;
+  color: #999;
+  border-color: #ddd;
+}
