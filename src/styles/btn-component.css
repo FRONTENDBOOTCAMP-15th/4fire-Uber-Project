@@ -1,3 +1,4 @@
+
 /* 삭제예정 */
 body { 
     background: silver;
@@ -49,3 +50,36 @@ body {
         }
     }
 }
+
+.download-101 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 84px;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  background: transparent;
+}
+
+.container-102 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 36px;
+}
+
+.btn-info-104 {
+  font-size: 21.3px;
+  font-weight: 600;
+}
+
+.logo-103 {
+  inline-size: 104px;
+  block-size: 104px;
+}
+
+.arrow-105 {
+  inline-size: 56px;
+  block-size: 56px;
+}
+
