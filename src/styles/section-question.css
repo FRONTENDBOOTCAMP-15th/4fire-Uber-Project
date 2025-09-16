@@ -1,0 +1,12 @@
+.question-container {
+  max-inline-size: 1152px;
+  block-size: auto;
+}
+
+.title-108 {
+  margin-block-end: 36px;
+
+  h2 {
+    margin: 0;
+  }
+}
