@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/sign-up.css" />
+    <title>가입하기 페이지</title>
+  </head>
+  <body>
+    <!-- pages top, main, bottom numbering 203 -->
+    <div class="top-203">
+      <h2>UT로 운행하기</h2>
+      <span class="small-title-203">기사로 가입하기</span>
+      <!-- 자세히 보기 컴포넌트 class number 202 -->
+      <div class="etc-202">
+        <a class="detail-202" href="#">자세히 보기</a>
+      </div>
+    </div>
+    <div class="main-203">
+      <!-- 입력 컴포넌트 class number 201 -->
+    <form action="/" method="post" class="signup-201">
+
+      <!-- 이름 + 성 (2열) -->
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="input-first-201" class="sr-only">이름</label>
+          <input type="text" id="input-first-201" name="first-201" required placeholder="이름" />
+        </div>
+        <div class="form-field">
+          <label for="input-last-201" class="sr-only">성</label>
+          <input type="text" id="input-last-201" name="last-201" required placeholder="성" />
+        </div>
+      </div>
+
+      <!-- 이메일 -->
+      <div class="form-field success">
+        <label for="input-email-201" class="sr-only">이메일</label>
+        <input type="email" id="input-email-201" name="email-201" required placeholder="이메일" />
+      </div>
+
+      <!-- 비밀번호 + 눈 아이콘 -->
+      <div class="form-field password">
+        <label for="input-password-201" class="sr-only">비밀번호</label>
+        <input type="password" id="input-password-201" name="password-201" class="password-input" required placeholder="비밀번호" />
+
+        <!-- 눈 아이콘 토글 -->
+        <label class="toggle-eye-201">
+          <input type="checkbox" class="visually-hidden" id="toggle-eye-201" />
+
+          <!-- 눈 감은 상태 -->
+          <svg class="off-201" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C8.36403 6 5.23183 9.21014 3.81174 10.9343C3.42357 11.4056 3.22949 11.6412 3.22949 12C3.22949 12.3588 3.42357 12.5944 3.81173 13.0657C5.23183 14.7899 8.36403 18 11.9998 18C15.6355 18 18.7677 14.7899 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12ZM11.9998 15C13.6566 15 14.9998 13.6569 14.9998 12C14.9998 10.3431 13.6566 9 11.9998 9C10.3429 9 8.99977 10.3431 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15Z"
+              fill="#0075FF" />
+          </svg>
+
+          <!-- 눈 뜬 상태 -->
+          <svg class="on-201" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z"
+              fill="#0075FF" />
+            <path d="M5 2L21 18" stroke="#0075FF" stroke-width="2" />
+          </svg>
+        </label>
+      </div>
+
+      <!-- 전화번호 -->
+      <div class="form-field">
+        <label for="input-phone-201" class="sr-only">전화번호</label>
+        <input type="tel" id="input-phone-201" name="phone-201" placeholder="전화번호" />
+      </div>
+
+      <!-- 국가 -->
+      <div class="form-field">
+        <label for="input-country-201" class="sr-only">국가</label>
+        <input type="text" id="input-country-201" name="country-201"
+          value="Seoul, Korea, Republic of (South Korea)" readonly />
+      </div>
+    </form>
+    </div>
+    <div class="bottom-203">
+      <p class="stipulation-203">
+        '계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 
+        또한 위에 입력한 번호로 UT LLC 및 그 제휴가(통칭하여 'UT')가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 발신하는 전화나 SMS 메세지를 수신하는 데 동의합니다. 
+        마케팅 메세지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메세지 수신을 원하지 않으시는 경우, 
+        89203번으로 'STOP'이라고 문자 메세지를 보내 수신을 거부하실 수 있습니다.
+      </p>
+      <!-- 가입하기 컴포넌트 class number 001-->
+      <button class="button-001 button" type="button" />가입하기</button>
+      <p class="ect-203">이미 계정이 있으신가요?</p>
+      <!-- 자세히 보기 컴포넌트 로그인으로 수정 class number 202 -->
+      <div class="etc-202">
+        <a class="login-202" href="#">로그인</a>
+      </div>
+    </div>
+  </body>
+</html>
